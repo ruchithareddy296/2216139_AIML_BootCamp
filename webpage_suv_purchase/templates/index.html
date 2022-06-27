@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SUV Purchase</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+<center>
+      <h1>🚗SUV Purchase Prediction🚗</h1>
+<form action="./predict" method="POST">
+    <table>
+        <tr>
+            <td><label for="age">Age</label></td>
+            <td>:</td>
+            <td>
+                <input type="number" name="age" placeholder="Enter Age"/>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="salary">Estimated Salary</label></td>
+            <td>:</td>
+            <td>
+                <input type="number" name="salary" placeholder="Enter Estimated salary"/>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3"><input id="btn" type="submit" value="Predict" /></td>
+        </tr>
+    </table>
+    <p>Prediction:{{pred}}</p>
+</form>
+</center>
+</body>
+</html>
